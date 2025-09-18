@@ -1,2 +1,2 @@
 # high-school
-12 grade project, code and tasks
+ This is the repulsatory for my work in IT for 12 grade
