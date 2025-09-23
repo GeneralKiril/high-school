@@ -1,0 +1,11 @@
+h1 {
+    /*text-align: center;*/
+    color: blue;
+    /* Changes text color */
+    height: 60px;
+    /* Sets the height of the element */
+}
+
+body {
+    background-color: lightgray;
+}
