@@ -1,9 +1,24 @@
-h1 {
-    /*text-align: center;*/
+#main-content {
+    text-align: center;
+    justify-content: center;
     color: blue;
     /* Changes text color */
     height: 60px;
-    /* Sets the height of the element */
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
+    /* Centers text in table */
+}
+
+.big
+{
+    grid-row: span 2;
+    display: inline-grid;
+    align-content: center;
+    /* Makes the element span 2 columns */
 }
 
 body {
