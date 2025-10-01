@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>"Kiril's portfolio"</title>
+    <title>"Kiril's site"</title>
     <meta charset="UTF-8">
     
     <meta name="description" content="This is my first web page">
@@ -11,40 +11,53 @@
 </head>
 
 <body>
-    <!--h1 style="text-align: center;"></h1-->
-    <h1 id="main-content">My portfolio </h1>
+    <h1 id="Header">My portfolio </h1>
     <p>This is my first web page.</p>
     <hr>
-    this is not a paragraph
-    <br>
-    <img src='german_battle_flag.png' alt='ww1 kaiserreich flag'>
-    <br>
-    <grid>
-        <div class="big" style="background-color:lightblue;">
-            <h2>1</h2>
-            <p>This is a bigger box</p>
+
+    <grid id="Main content">
+        <div id="naavigation">
+           <ul>
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li>About</li>
+           </ul>
         </div>
-        <div style="background-color:lightgreen;">2</div>
-        <div style="background-color:lightpink;">3</div>
-        <div style="background-color:lightgrey;">4</div>
+        <div id="Social Media">
+            <span>GitHub</span>
+            <span>Twitter</span>
+            <span>LinkIn</span>
+            <span>Mail</span>
+        </div>
     </grid>
+
+    <hr>
+
     <table cellpadding="8" cellspacing="0">
         <caption>Names</caption>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-        </tr>
-        <tr>
-            <td>Kiril</td>
-            <td>Novak</td>
-        </tr>
-        <tr>
-            <td>Anna</td>
-            <td>Schmidt</td>
+    <tr>
+        <td rowspan="2" colspan="4">
+            <img id="profile" src='me.jpg'></td>
+        <td><a a href="Portfolio.html"> Portfolio</a> </td>
+   
+    </tr>
+    <tr>
+        
+        <td>Blog</td>
+    </tr>
+    <tr>
+        <td>Github</td>
+        <td>Twitter</td>
+        <td>LinkIn</td>
+        <td>Mail</td>
+        <td>About</td>
+    </tr>
         </tr>
     </table>
 
 
 </body>
+
+
 
 </html>

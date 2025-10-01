@@ -1,26 +1,69 @@
 #main-content {
-    text-align: center;
     justify-content: center;
-    color: blue;
+    
     /* Changes text color */
-    height: 60px;
+    width: 40%;
+    height: 40%;
+    position: relative;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+#Header{
+    
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+#profile-id{
+grid-column: 5;
+grid-row: 1 / span 2;
+
+}
+#Social Media{
+    grid-column:span 4;
+    grid-row: span 1;
+}
+#navigation{
+    grid-column-start: 5;
+    grid-column-end: 5;
 }
 
 table, th, td {
     border-collapse: collapse;
-    text-align: center;
+    text-align: left;
     border: 1px solid black;
+    width: 20%;
     /* Centers text in table */
 }
-
-.big
+table
 {
-    grid-row: span 2;
-    display: inline-grid;
-    align-content: center;
-    /* Makes the element span 2 columns */
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#profile {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    /* Makes the image circular */
+}
+
+
+html 
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
+    
+    display: block;
     background-color: lightgray;
 }
