@@ -1,14 +1,15 @@
-#main-content {
+#Main_content {
+    
+    height: 40%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    gap: 10px; /* space between grid items, adjust as needed */
-    width: 60%; /* increase to bring items together */
-    height: auto; /* adjust height automatically */
 
     grid-template-columns: repeat(4, 1fr) 2fr;
     grid-template-rows: repeat(6, 1fr);
-    justify-content: center; /* horizontal centering */
-    align-items: center;     /* vertical centering */
 }
+
 #Header{
     
     display: grid;
@@ -16,57 +17,61 @@
     margin-right: auto;
     justify-content: center;
 }
+
 #profile-img {
     grid-column: span 4;
     grid-row: span 5;
-    display: flex; /* better for centering the image inside */
-    width: 150px;  /* fixed size to keep image visible */
-    height: 150px;
-    object-fit: cover;
-    
 }
-
-#
-
 /* Remove width/height from #profile if it's conflicting */
-#profile {
-    width: auto;
-    height: auto;
+#profile-img img {
+    width: 100%;
+    height: 100%;
 }
-#Social_Media{
-    grid-column:span 4;
-    grid-row: span 1;
-    display: inline;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-#navigation{
-
-    grid-column-start: 1;
-    grid-column-end: 6;
-    display:grid;
+#navigation {
+    grid-column: span 1;
+    grid-row: span 6;
+    display: grid;
     text-align: center;
     align-items: center;
 }
+
 #navigation ul {
     list-style-type: none;
     padding: 0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
 }
 
-html 
-{
-    
-    height: 100%;
-    width: 100%;
-    margin: 0;
+html, body {
     padding: 0;
-}
-body {
+    margin: 0;
     height: 100%;
-    color: white;
-    display: block;
-    background-color: rgb(0, 0, 0);
-
+    color:white;
 }
+
+body {
+    background-color: #171717;
+    align-content: center;
+    justify-content: center;
+}
+#Social_Media{
+    align-items: center;
+    display: flex;
+    grid-column: span 4;
+    grid-row: span 1;
+    justify-content: space-evenly;
+    background-color: #191e46;
+}
+
+.social-media-btn {
+    border: 1px rgb(103, 19, 128) solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1px;
+    
+}
+
