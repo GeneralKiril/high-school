@@ -1,0 +1,40 @@
+#blog {
+    background-color: rgb(184, 218, 238);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color: rgb(8, 11, 102);
+    justify-content: center;
+}
+
+#body {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#Header {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#back_btn {
+    justify-content: space-between;
+    margin-top: 0%;
+    margin-right: 0%;
+    display: inline-block;
+
+}
+
+#back_btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#back_btn a:hover {
+
+    color: rgb(10, 62, 62);
+}
