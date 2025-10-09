@@ -1,5 +1,5 @@
 #Main_content {
-    
+
     height: 40%;
     width: 40%;
     margin-left: auto;
@@ -7,11 +7,11 @@
     display: grid;
 
     grid-template-columns: repeat(4, 1fr) 2fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
 
-#Header{
-    
+#Header {
+
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -21,57 +21,81 @@
 #profile-img {
     grid-column: span 4;
     grid-row: span 5;
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
+
 /* Remove width/height from #profile if it's conflicting */
 #profile-img img {
-    width: 100%;
+    width: 50%;
     height: 100%;
+
 }
+
 #navigation {
     grid-column: span 1;
     grid-row: span 6;
     display: grid;
-    text-align: center;
-    align-items: center;
 }
 
 #navigation ul {
     list-style-type: none;
     padding: 0;
-    margin:0;
-    display:flex;
+    margin: 0;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: right;
+
 }
 
-html, body {
+#navigation li {
+    flex: 1;   
+    display: flex; 
+}
+
+#navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+#navigation a:hover{
+
+    color:rgb(164, 238, 238);
+}
+
+html,
+body {
     padding: 0;
     margin: 0;
     height: 100%;
-    color:white;
+    color: white;
 }
 
 body {
     background-color: #171717;
-    align-content: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-#Social_Media{
+
+#social-media {
     align-items: center;
     display: flex;
     grid-column: span 4;
     grid-row: span 1;
     justify-content: space-evenly;
-    background-color: #191e46;
+    background-color: rgb(23, 7, 171);
+
 }
 
 .social-media-btn {
-    border: 1px rgb(103, 19, 128) solid;
+    /*.social-media span */
+    border: 1px rgb(18, 4, 59) solid;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: -1px;
-    
 }
-
