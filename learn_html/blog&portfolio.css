@@ -15,10 +15,11 @@
 }
 
 #Header {
-    display: grid;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+
 }
 
 #back_btn {
