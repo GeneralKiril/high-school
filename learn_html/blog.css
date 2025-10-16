@@ -46,6 +46,7 @@
 }
 
 #1st_head {
+    display:grid;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     /* correct property for bold text */
