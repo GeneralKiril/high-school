@@ -1,5 +1,5 @@
 #article {
-    background-color: #fdfdfd;
+    background-color: #edc99a;
     color: #222;
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
@@ -60,21 +60,19 @@
     padding:  16px;
 }
 
-.article-content p {
+#article-content p {
     margin-bottom: 20px;
     font-size: 16px;
-    color: #333;
+    color: #232960;
 }
 
-.article-content strong {
+#article-content strong {
     color: #1f2937;
 }
 
-.article-content h2 {
+#article-content h2 {
     font-weight: 600;
-    color: #1f2937;
-    margin-top: 32px;
-    margin-bottom: 12px;
-    border-left: 4px solid #e65f1f;
-    padding-left: 6px;
+    color: #1d2a3b;
+
+
 }
