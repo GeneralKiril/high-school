@@ -1,0 +1,78 @@
+#article {
+    background-color: #edc99a;
+    color: #222;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styling */
+#Header_article {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 28px 12px; /*padding top/bottom and left/right*/
+}
+
+#Header_article h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#Header_article hr {
+    width: 50px;
+    border: 2px solid #e65f1f;
+    margin: 14px auto;
+}
+
+#article_btn {
+    text-align: left;
+}
+
+#article_btn a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+#article_btn a:hover {
+    color: #ff7849;
+}
+
+/* Hero image */
+#hero {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 24px;
+}
+
+.hero-img {
+    width: 85%;
+    max-width: 900px;
+
+    image-rendering: auto;
+}
+
+/* Article text */
+.article-content {
+    max-width: 800px;
+    margin: auto;
+    padding:  16px;
+}
+
+#article-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #232960;
+}
+
+#article-content strong {
+    color: #1f2937;
+}
+
+#article-content h2 {
+    font-weight: 600;
+    color: #1d2a3b;
+
+
+}
