@@ -1,99 +1,7 @@
-#Main_content {
-
-    height: 40%;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr) 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    border-radius: 10% 10% 10% 10%;
-    border: 1px solid rgb(134, 169, 230);
-}
-
-#Header {
-
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-
-#profile-img {
-    grid-column: span 3;
-    grid-row: span 6;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    margin: 10px;
-}
-
-/* Remove width/height from #profile if it's conflicting */
-img {
-    width: 40%;
-    height: 100%;
-    filter: grayscale();
-    transition: filter 0.5s ease;
-
-}
-
-img:hover {
-    filter: grayscale(0%);
-}
-
-/*#name{
-    display:none;
-}
-#name:hover{
-    color:rgb(164, 238, 238);
-    display:grid;
-}*/
-#navigation {
-    grid-column: span 1;
-    grid-row: span 6;
-
-    margin: 10px;
-    justify-content: center;
-}
-
-#navigation ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    height: 100%;
-
-
-}
-
-#navigation li {
-    flex: 1;
-    display: flex;
-    border: 1px rgb(18, 4, 59) solid;
-
-    justify-content: center;
-}
-
-#navigation a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#navigation a:hover {
-
-    color: rgb(164, 238, 238);
-}
-
-html,
-body {
+html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-    color: white;
 }
 
 body {
@@ -103,19 +11,114 @@ body {
     justify-content: center;
 }
 
+#main-content {
+    color: white;
+    height: 50%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    grid-template-rows: repeat(6, 1fr);
+    border: 5px solid black;
+    border-radius: 5%;
+}
+
+#profile-img {
+    grid-column: span 4;
+    grid-row: span 5;
+    position: relative;            /* for positioning the name div */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale();
+    transition: filter 0.5s ease;
+    
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+#name {
+    opacity: 0;
+    position:absolute;
+    left: 50%;
+    top:100%;
+    transform: translateX(-50%);
+    transition: top 0,4s ease;
+    background-color: rgba(31, 30, 60, 0.5);
+    border-radius: 50px;
+    border: 1px solid black;
+    padding:0.5em;
+
+}
+#profile-img:hover #name {
+
+    top:85%;
+}
+/* #name:hover { */
+/*     display: block; */
+/*     position: absolute; */
+/* } */
+
+#navigation {
+    grid-column: span 1;
+    grid-row: span 5;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+#navigation li {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: roboto;
+
+    border: 3px solid black;
+    margin: -1px;
+    border-radius: 0;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s ease;
+}
+
+#navigation a:hover {
+    color: cyan;
+}
+
 #social-media {
     align-items: center;
     display: flex;
-    grid-column: span 4;
+    grid-column: span 6;
     grid-row: span 2;
     justify-content: space-evenly;
-    background-color: rgb(23, 7, 171);
-
+    /* background-color: green; */
 }
 
 .social-media-btn {
-    /*.social-media span */
-    border: 1px rgb(18, 4, 59) solid;
+    /* border: 3px red solid; */
+    border: 3px solid black;
+    margin: -2.5px;
+    border-radius: 0;
     width: 100%;
     height: 100%;
     display: flex;
