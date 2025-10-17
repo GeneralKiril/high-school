@@ -49,16 +49,17 @@ img:hover {
     left: 50%;
     top:100%;
     transform: translateX(-50%);
-    transition: top 0,4s ease;
     background-color: rgba(31, 30, 60, 0.5);
     border-radius: 50px;
     border: 1px solid black;
     padding:0.5em;
-
+    transition: all 0.4s ease;
 }
 #profile-img:hover #name {
 
     top:85%;
+    color:#34426c
+
 }
 /* #name:hover { */
 /*     display: block; */
@@ -102,7 +103,7 @@ img:hover {
 }
 
 #navigation a:hover {
-    color: cyan;
+    color: rgb(54, 105, 134);
 }
 
 #social-media {
