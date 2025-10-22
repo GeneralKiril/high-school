@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     height: 100%;
 }
+
 /**/
 body {
     background-color: #171717;
@@ -21,46 +23,70 @@ body {
 
     grid-template-columns: repeat(4, 1fr) 2fr;
     grid-template-rows: repeat(6, 1fr);
-    border: 5px solid black;
-    border-radius: 5%;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 #profile-img {
     grid-column: span 4;
     grid-row: span 5;
-    position: relative;            /* for positioning the name div */
+    position: relative;
+    display: flex;
+    /* centers the image */
+    justify-content: center;
+    /* horizontal centering */
+    align-items: center;
+    /* vertical centering */
+    overflow: hidden;
+    /* keeps image inside borders */
+    padding: 10px;
+    /* optional: space from borders */
+    box-sizing: border-box;
+    border: 4px solid black;
+    border-radius: 5% 0 0 0;
+
 }
 
-img {
-    width: 100%;
+#profile-img img {
+    width: 90%;
+    /* make image smaller */
     height: 100%;
+    /* maintain aspect ratio */
     filter: grayscale();
     transition: filter 0.5s ease;
-    
+
 }
 
-img:hover {
+#profile-img img:hover {
     filter: grayscale(0%);
+    transform: scale(1.025);
+    transition: all 0.4s ease;
 }
 
 #name {
     opacity: 0;
-    position:absolute;
+    position: absolute;
     left: 50%;
-    top:100%;
+    top: 100%;
     transform: translateX(-50%);
     background-color: rgba(31, 30, 60, 0.5);
     border-radius: 50px;
     border: 1px solid black;
-    padding:0.5em;
+    padding: 0.5em;
     transition: all 0.4s ease;
 }
+
 #profile-img:hover #name {
 
-    top:85%;
-    color:#34426c
-
+    top: 85%;
+    color: #34426c
 }
+
 /* #name:hover { */
 /*     display: block; */
 /*     position: absolute; */
@@ -91,9 +117,13 @@ img:hover {
     display: flex;
     font-family: roboto;
 
-    border: 3px solid black;
-    margin: -1px;
-    border-radius: 0;
+    border: 4px solid black;
+
+
+}
+
+#navigation li:first-child {
+    border-radius: 0 5% 0 0;
 }
 
 #navigation a {
@@ -117,13 +147,21 @@ img:hover {
 
 .social-media-btn {
     /* border: 3px red solid; */
-    border: 3px solid black;
+    border: 4px solid black;
     margin: -2.5px;
-    border-radius: 0;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: -1px;
+    background-color: 171717;
+}
+
+#social-media .social-media-btn:first-child {
+    border-radius: 0 0 0 5%;
+}
+
+#social-media .social-media-btn:last-child {
+    border-radius: 0 0 5% 0;
 }
