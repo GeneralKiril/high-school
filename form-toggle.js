@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeBtn.addEventListener("click", () => {
         contactForm.style.display = "none";
-        mainContent.style.display = "grid"; // restores your layout
+        mainContent.style.display = "grid";
     });
 });
-

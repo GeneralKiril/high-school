@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Kirils's portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a127a92184.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="main-content">
 
-      <div id="profile-img">
-        <img src="me_portfoli_profile.png" alt="A profile picture"/>
-        <div id="name">Kiril Popov</div>
-      </div>
+<head>
+  <title>Kirils's portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a127a92184.js" crossorigin="anonymous"></script>
+</head>
 
-      <div id="navigation">
-        <ul>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li>About</li>
-        </ul>
-      </div>
+<body>
+  <main id="main-content">
 
-      <div id="social-media">
-        <span class="social-media-btn"><i class="fa-brands fa-github"></i></span>
-        <span class="social-media-btn"><i class="fa-brands fa-x-twitter"></i></span>
-        <span class="social-media-btn"><i class="fa-brands fa-linkedin-in"></i></span>
-        <span class="social-media-btn"><i class="fa-solid fa-envelope"></i></span>
-      </div>
-
+    <div id="profile-img">
+      <img src="me_portfoli_profile.png" alt="A profile picture" />
+      <div id="name">Kiril Popov</div>
     </div>
 
-    <script src="name-toggle.js"></script>
-  </body>
+    <nav id="navigation">
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <div id="social-media">
+      <a href="https://github.com/GeneralKiril" target="_blank" class="social-media-btn"><i
+          class="fa-brands fa-github"></i></a>
+      <span class="social-media-btn"><i class="fa-brands fa-x-twitter"></i></span>
+      <span class="social-media-btn"><i class="fa-brands fa-linkedin-in"></i></span>
+      <span id="email-btn" class="social-media-btn">
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+
+    </div>
+  </main>
+
+  <div id="contact-form" class="hidden">
+    <div class="form-box">
+      <h2 class="form-header"> Contact Me</h2>
+      <form action="mailto:YOUR_EMAIL@example.com" method="POST" enctype="text/plain">
+        <label for="name-input">Your Name</label>        
+        <input type="text" id="name-input" name="name" placeholder="Enter your name" required>
+        
+        <label for="email-input">Your Email</label>
+        <input type="email" id="email-input" name="_replyto" placeholder="example@mail.com" required>
+        
+        <label for="message-input">Your Message</label>
+        <textarea id="message-input" name="message" rows="5" placeholder="Write your message here..."
+          required></textarea>
+        <div class="button-row">
+          <button type="submit">Send</button>
+          <button type="button" id="close-btn">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="name-toggle.js"></script>
+  <script src="form-toggle.js"></script>
+
+</body>
+
 </html>
